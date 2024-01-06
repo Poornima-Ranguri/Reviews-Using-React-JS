@@ -28,6 +28,7 @@ class ReviewsCarousel extends Component {
               className="btn"
               type="button"
               onClick={this.leftArrowClicking}
+              data-testid="leftArrow"
             >
               <img
                 src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
@@ -42,7 +43,7 @@ class ReviewsCarousel extends Component {
               alt={personProfile.username}
               className="image"
             />
-            <h1 className="head">{personProfile.username}</h1>
+            <p className="head">{personProfile.username}</p>
             <p className="parag-company">{personProfile.companyName}</p>
             <p className="parag-para">{personProfile.description}</p>
           </div>
@@ -50,6 +51,7 @@ class ReviewsCarousel extends Component {
             <button
               type="button"
               className="btn"
+              data-testid="rightArrow"
               onClick={this.rightArrowClicking}
             >
               <img
